@@ -46,7 +46,7 @@
     "build-schema": "babel-node ./scripts/buildSchema.js",
     "start": "nodemon public/index.js --exec babel-node --copy-files",
     "watch": "nodemon src/index.js --exec babel-node --copy-files",
-    "client": "npm start --prefix client",
+    "client": "npm start --prefix pokedex",
     "dev": "concurrently \"npm run watch\" \"npm run client \""
   },
   "engines": {
