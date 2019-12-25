@@ -42,7 +42,7 @@
     "eslint": "eslint src/*",
     "build": "rm -rf dist/* && babel src --out-dir public --copy-files",
     "build-schema": "babel-node ./scripts/buildSchema.js",
-    "start": "node dist/index.js",
+    "start": "nodemon public/index.js",
     "watch": "nodemon src/index.js --exec babel-node --copy-files"
   }
 }
