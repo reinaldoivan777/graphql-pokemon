@@ -2,7 +2,7 @@ import "babel-polyfill"; // eslint-disable-line import/no-extraneous-dependencie
 
 import app from "./app";
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 (async () => {
   await app.listen(PORT);
